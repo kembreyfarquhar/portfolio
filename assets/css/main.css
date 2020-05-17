@@ -3815,7 +3815,7 @@ body.landing {
 
 #header {
   background: #07090c;
-  color: rgba(255, 255, 255, 0.75);
+  color: black;
   cursor: default;
   height: 3.25em;
   left: 0;
@@ -3828,7 +3828,7 @@ body.landing {
 }
 
 #header > h1 {
-  color: #fff;
+  color: black;
   display: inline-block;
   height: inherit;
   left: 1.25em;
@@ -3848,7 +3848,7 @@ body.landing {
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #fff;
+  color: black;
   display: inline-block;
   margin-right: 1.25em;
   text-decoration: none;
@@ -3947,9 +3947,9 @@ body.landing {
   -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   -webkit-overflow-scrolling: touch;
-  background: #07090c;
+  background: #3dddba;
   box-shadow: none;
-  color: #fff;
+  color: black;
   height: 100%;
   max-width: 80%;
   overflow-y: auto;
@@ -4031,7 +4031,7 @@ body.landing {
 }
 
 #nav .close:hover {
-  color: #fff;
+  color: black;
 }
 
 @media screen and (max-width: 736px) {
@@ -4060,10 +4060,10 @@ body.landing {
 
 #banner {
   padding: 8em 0 6em 0;
-  background-color: #1e2832;
-  color: rgba(255, 255, 255, 0.75);
+  background-color: #ffffff;
+  color: black;
   background-attachment: fixed;
-  background: rgb(24, 21, 26);
+  background: #ffffff;
   background-size: cover;
   text-align: center;
 }
@@ -4071,7 +4071,7 @@ body.landing {
 #banner input,
 #banner select,
 #banner textarea {
-  color: #fff;
+  color: black;
 }
 
 #banner a {
@@ -4080,7 +4080,7 @@ body.landing {
 
 #banner strong,
 #banner b {
-  color: #fff;
+  color: black;
 }
 
 #banner h1,
@@ -4089,7 +4089,7 @@ body.landing {
 #banner h4,
 #banner h5,
 #banner h6 {
-  color: #fff;
+  color: black;
 }
 
 #banner blockquote {
@@ -4110,7 +4110,7 @@ body.landing {
 #banner input[type="button"],
 #banner button,
 #banner .button {
-  background-color: #fff;
+  background-color: black;
   box-shadow: none;
   color: #1e2832 !important;
 }
@@ -4146,7 +4146,7 @@ body.landing {
 #banner .button.special {
   background-color: #25ccb6;
   box-shadow: none;
-  color: #fff !important;
+  color: black !important;
 }
 
 #banner input[type="submit"].special:hover,
@@ -4171,8 +4171,8 @@ body.landing {
 #banner button.alt,
 #banner .button.alt {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #fff;
-  color: #fff !important;
+  box-shadow: inset 0 0 0 2px black;
+  color: black !important;
 }
 
 #banner input[type="submit"].alt:hover,
@@ -4198,7 +4198,7 @@ body.landing {
 }
 
 #banner p {
-  color: #fff;
+  color: black;
   font-size: 1.5em;
   margin-bottom: 1.75em;
   text-transform: uppercase;
@@ -4206,8 +4206,8 @@ body.landing {
 
 #banner .icon {
   border-radius: 100%;
-  border: solid 2px #fff;
-  color: #fff;
+  border: solid 2px black;
+  color: black;
   display: inline-block;
   font-size: 3em;
   height: 2.25em;
@@ -4427,12 +4427,35 @@ body.landing {
   padding-top: 3.5%;
 }
 
+#mydish-photo {
+  height: 500px;
+  width: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
+#antsknapsack-photo {
+  display: block;
+  max-height: 25rem;
+  transition: all 0.2s ease-in-out;
+}
+
 #mydish-photo:hover,
 #antsknapsack-photo:hover,
 #drawsomething-photo:hover,
 #basicstyling-photo:hover,
 #tripsplit-photo:hover {
   cursor: zoom-in;
+}
+
+@media screen and (max-width: 580px) {
+  #mydish-photo {
+    height: 250px;
+    width: 120px;
+  }
+
+  #antsknapsack-photo {
+    max-height: 13rem;
+  }
 }
 
 html {
