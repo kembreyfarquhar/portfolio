@@ -3781,19 +3781,11 @@ button.alt:active,
   .wrapper {
     padding: 3em 2em 1em 2em;
   }
-
-  .inner #skills-header {
-    font-size: 0.8rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .wrapper {
     padding: 2em 1em 0.1em 1em;
-  }
-
-  .inner #skills-header {
-    font-size: 0.5rem;
   }
 }
 
@@ -4427,6 +4419,15 @@ body.landing {
   padding-top: 3.5%;
 }
 
+#skills-list {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 3% 0 7% 0;
+  color: rgb(24, 21, 26);
+  line-height: 2.2rem;
+  font-weight: 500;
+}
+
 #mydish-photo {
   height: 500px;
   width: 250px;
@@ -4455,6 +4456,14 @@ body.landing {
 
   #antsknapsack-photo {
     max-height: 13rem;
+  }
+
+  #skills-svg {
+    width: 80%;
+  }
+
+  #skills-list {
+    font-size: 0.9rem;
   }
 }
 
