@@ -42,7 +42,7 @@
       .append('<a href="#nav" class="close"></a>')
       .appendTo($body)
       .panel({
-        delay: 100,
+        delay: 60,
         hideOnClick: true,
         hideOnSwipe: true,
         resetScroll: true,
