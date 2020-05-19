@@ -2790,7 +2790,7 @@ input[type="reset"],
 input[type="button"],
 button,
 .button {
-  background-color: #25383b;
+  background-color: #25ccb6;
   box-shadow: none;
   color: #fff !important;
 }
@@ -2808,7 +2808,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #2f474b;
+  background-color: #25ccb6;
 }
 
 input[type="submit"]:active,
@@ -4464,6 +4464,25 @@ body.landing {
 
   #skills-list {
     font-size: 0.9rem;
+  }
+}
+
+.skills-icon {
+  height: 100px;
+  width: 100px;
+  margin: 0 10px 30px 10px;
+}
+
+.skills-icon-png {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  .skills-icon {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px 10px 5px;
   }
 }
 
