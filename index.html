@@ -146,13 +146,12 @@
 
 
 				<!-- ===================MY DISH================== -->
-				<article class="feature left"
-					style="border-radius: 15px; box-shadow: 2px 2px 5px grey; display: flex; align-items: center;">
+				<article class="feature left project-left">
 					<span>
 						<img id="mydish-photo" src="images/mydish.png" onclick="onClickZoom('mydish-photo')"
 							alt="screenshot of the app MyDish, viewing a recipe and its ingredients" />
 					</span>
-					<div style="padding-left: 80px; padding-right: 80px;">
+					<div id="mydish-text-container">
 						<h2>MyDish</h2>
 						<p>A version control recipe editing app, allowing users to create recipes, edit them, and view
 							all previous versions of their recipes. Built to the specifications of our stakeholder.
@@ -171,14 +170,13 @@
 				</article>
 
 				<!-- =====================ANT'S KNAPSACK================== -->
-				<article class="feature right"
-					style="border-radius: 15px; box-shadow: -2px 2px 5px grey; justify-content: space-between; align-items: center; height: auto">
+				<article class="feature right project-right">
 					<div style="height: 30%; display: flex; justify-content: center;"><img id="antsknapsack-photo"
 							src="images/antsknapsack.png" onclick="onClickZoom('antsknapsack-photo')"
 							alt="photo of the game The Ant's Knapsack, including the room you're in, the items inside, a control panel, your inventory, a map of all the rooms, a leaderboard for high scores, and a chat room to talk to other players." />
 					</div>
 
-					<div class="content" style=" padding: 3.5% 3.5% 0 3.5%;">
+					<div class="content" id="antsknapsack-text-container">
 						<h2>The Ant's Knapsack</h2>
 						<p>Multi-user Dungeon style game. You're an ant, you move around, pick up items (L I F T). Each
 							item has a weight and a score. The objective is to obtain the highest score within your
@@ -199,13 +197,12 @@
 				</article>
 
 				<!-- =================Basic Styling====================== -->
-				<article class="feature left"
-					style="padding: 30px 30px 30px 0; border-radius: 15px; box-shadow: 2px 2px 5px grey;">
+				<article class="feature left project-left">
 					<span class="image"><img id="basicstyling-photo" src="images/basicstyling.png"
 							onclick="onClickZoom('basicstyling-photo')"
 							alt="representation of a site that allows users to look at different styling options and libraries"
 							style="transition: all .2s ease-in-out" /></span>
-					<div class="content">
+					<div class="content" id="basicstyling-text-container">
 						<h2>Basic Styling</h2>
 						<p>I made this project in hopes to help fellow Lambda School students (and anyone else) new to
 							styling, having a hard time selecting a style library or method of styling. This site
@@ -227,13 +224,13 @@
 				</article>
 
 				<!-- =======================Trip Split BE========================= -->
-				<article class="feature right" style=" border-radius: 15px; box-shadow: -2px 2px 5px grey;">
+				<article class="feature right project-right">
 					<span class="image"><img id="tripsplit-photo" src="images/tripsplit.png"
 							onclick="onClickZoom('tripsplit-photo')"
 							alt="photo of the database architecture layout of the tables in the TripSplit backend, showing pointers to foreign keys"
 							style="transition: all .2s ease-in-out; max-height: 20rem; height: auto;" /></span>
 
-					<div class="content" style="padding: 30px 0 0 30px;">
+					<div class="content" id="tripsplit-text-container">
 						<h2>Trip Split API</h2>
 						<p>This project was built in 4 days on a remote team of 6 developers. I was solely in charge of
 							creating the backend API. The product vision was an app that allows users to split
@@ -256,12 +253,12 @@
 				</article>
 
 				<!-- ========================DRAW SOMETHING========================= -->
-				<article class="feature left" style="padding: 20px; border-radius: 15px; box-shadow: 2px 2px 5px grey;">
+				<article class="feature left project-left">
 					<span class="image"><img id="drawsomething-photo" src="images/drawsomething.png"
 							onclick="onClickZoom('drawsomething-photo')"
 							alt="representation of a site that allows you to draw by clicking and dragging your mouse, with wild colors and shapes"
 							style="transition: all .2s ease-in-out" /></span>
-					<div class="content">
+					<div class="content" id="drawsomething-text-container">
 						<h2>Draw Something</h2>
 						<p>A fun side project to practice Creative Coding and get some experience with HTML5 canvas.
 							Simply click and drag the mouse to draw on the canvas. This was heavily inspired by one of
