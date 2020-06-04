@@ -3758,7 +3758,7 @@ button.alt:active,
   .wrapper > .inner {
     width: 65em;
   }
-  .inner #skills-header {
+  .inner #skills-title {
     font-size: 1.5rem;
   }
 }
@@ -3772,7 +3772,7 @@ button.alt:active,
     width: 100%;
   }
 
-  .inner #skills-header {
+  .inner #skills-title {
     font-size: 1rem;
   }
 }
@@ -4399,7 +4399,47 @@ body.landing {
   }
 }
 
-#skills-svg {
+/* ================ MAIN ====================== */
+#katie-avatar {
+  border-radius: 50%;
+  height: 18rem;
+}
+
+#page-title {
+  margin-top: 20px;
+  color: #3dddba;
+}
+
+#top-svg-container {
+  width: 100%;
+  height: 110px;
+  background: #3dddba;
+}
+
+/* ==================== ABOUT =================== */
+#about-header {
+  background: rgba(99, 98, 98, 0.733);
+  margin: 5% 6% 8% 6%;
+  padding: 2% 5%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 4px rgba(99, 98, 98, 0.733),
+    2px 2px 4px rgba(99, 98, 98, 0.733);
+}
+
+#about-title {
+  text-shadow: 1.5px 1.5px rgb(68, 68, 68);
+}
+
+/* ==================== SKILLS =================== */
+#skills-header-background {
+  width: 100%;
+  height: 60px;
+  background: #3dddba;
+  display: flex;
+  justify-content: center;
+}
+
+#skills-header {
   margin-top: 25px;
   margin-left: 25px;
   margin-bottom: 45px;
@@ -4428,6 +4468,7 @@ body.landing {
   font-weight: 500;
 }
 
+/* ==================== PROJECTS =================== */
 .project-left {
   border-radius: 15px;
   box-shadow: 2px 2px 5px grey;
@@ -4494,7 +4535,7 @@ body.landing {
     max-height: 13rem;
   }
 
-  #skills-svg {
+  #skills-header {
     width: 80%;
   }
 
