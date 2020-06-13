@@ -4487,6 +4487,12 @@ body.landing {
   visibility: visible;
 }
 
+@media screen and (max-width: 980px) {
+  .tooltiptext {
+    display: none;
+  }
+}
+
 /* ==================== PROJECTS =================== */
 .project-left {
   border-radius: 15px;
