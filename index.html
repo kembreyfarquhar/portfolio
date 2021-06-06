@@ -1,21 +1,21 @@
+</html>
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Katie Embrey-Farquhar</title>
     <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Katie Embrey Farquahar's Web Development portfolio" />
     <meta
       property="og:image"
       content="https://www.kembreyfarquhar.com/images/katie-avatar.png"
     />
-
     <meta
       property="og:description"
       content="A portfolio of sorts. Her name is Katie. She codes."
     />
-
     <meta property="og:url" content="https://www.kembreyfarquhar.com/" />
-
     <meta property="og:title" content="Katie Embrey-Farquhar" />
     <link rel="icon" href="favicon.ico.png" type="image/x-icon" />
     <script
@@ -28,8 +28,9 @@
       :root {
         --pink: #fe7c9b;
         --mint: #25ccb6;
+        --dark-mint: #00917E;
         --yellow: #ffca26;
-        --black: #1b1e23;
+        --black: #000000;
         --white: #ffffff;
         --light-grey: #eee;
         --grey: #555;
@@ -549,11 +550,12 @@
         width: 70em;
       }
       .wrapper.style1 {
-        background-color: #eee;
-        color: #777;
+        background-color: var(--light-grey);
+        color: var(--grey);
       }
       .wrapper.style1 a {
-        color: var(--mint);
+        color: var(--dark-mint);
+        font-weight: 600;
       }
       .wrapper.style1 h1,
       .wrapper.style1 h2,
@@ -561,7 +563,8 @@
       .wrapper.style1 h4,
       .wrapper.style1 h5,
       .wrapper.style1 h6 {
-        color: #555;
+        color: var(--grey);
+        font-weight: 900;
       }
       .wrapper.style1 .feature {
         background-color: var(--white);
@@ -571,9 +574,9 @@
       .wrapper.style1 input[type="button"],
       .wrapper.style1 button,
       .wrapper.style1 .button {
-        background-color: #555;
+        background-color: var(--grey);
         box-shadow: none;
-        color: #eee !important;
+        color: var(--light-grey) !important;
       }
       .wrapper.style2 {
         background-color: #1e2832;
@@ -582,7 +585,7 @@
       .wrapper.style2 input,
       .wrapper.style2 select,
       .wrapper.style2 textarea {
-        color: #fff;
+        color: var(--white);
       }
       .wrapper.style2 h1,
       .wrapper.style2 h2,
@@ -963,6 +966,10 @@
       #antsknapsack-text-container {
         padding: 3.5% 3.5% 0 3.5%;
       }
+      #projects.wrapper.style1 div.inner p {
+        color: var(--black);
+        font-weight: 500;
+      }
       .skills-icon {
         height: 100px;
         width: 100px;
@@ -1019,16 +1026,16 @@
         >
       </div>
       <!-- hamburger menu icon -->
-      <a href="#nav"></a>
+      <a href="#nav" aria-label="Open the navigation menu."></a>
     </header>
 
     <!-- menu options -->
     <nav id="nav">
       <ul class="links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills-header-background">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" aria-label="Scroll to the 'About Me' section of the page.">About Me</a></li>
+        <li><a href="#skills-header-background" aria-label="Scroll to the 'My Skills' section of the page.">Skills</a></li>
+        <li><a href="#projects" aria-label="Scroll to the 'My Projects' section of the page.">Projects</a></li>
+        <li><a href="#contact" aria-label="Scroll to the 'Contact Me' section of the page.">Contact</a></li>
       </ul>
     </nav>
 
@@ -1337,6 +1344,7 @@
                 <a
                   href="https://github.com/Lambda-School-Labs/mydish-fe"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Code</a
                 >
@@ -1374,6 +1382,7 @@
                 <a
                   href="https://the-ants-knapsack.netlify.app/"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Site</a
                 >
@@ -1382,6 +1391,7 @@
                 <a
                   href="https://github.com/Organization-for-CS-Build-Week-1/PIXI-client"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Code</a
                 >
@@ -1416,6 +1426,7 @@
                 <a
                   href="https://basic-styling-app.netlify.app/"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Site</a
                 >
@@ -1424,6 +1435,7 @@
                 <a
                   href="https://github.com/kembreyfarquhar/basic-styling"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Code</a
                 >
@@ -1462,6 +1474,7 @@
                 <a
                   href="https://github.com/build-week-tripsplit/Back-End"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Code</a
                 >
@@ -1486,7 +1499,7 @@
               A fun side project to practice Creative Coding and get experience
               using HTML5 canvas. Simply click and drag the mouse to draw on the
               canvas. This was heavily inspired by one of the projects in
-              <a href="https://javascript30.com/" target="_blank"
+              <a href="https://javascript30.com/" target="_blank" rel="noopener" aria-label="Link to open official Javascript 30 page."
                 >JavaScript 30</a
               >
               and was one of my first attempts at creating something in JS.
@@ -1497,6 +1510,7 @@
                 <a
                   href="https://drawsomething.netlify.app/"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Site</a
                 >
@@ -1505,6 +1519,7 @@
                 <a
                   href="https://github.com/kembreyfarquhar/Draw"
                   target="_blank"
+                  rel="noopener"
                   class="button"
                   >View Code</a
                 >
@@ -1580,7 +1595,9 @@
             <a
               href="https://twitter.com/kembreyfarquhar"
               target="_blank"
+              rel="noopener"
               class="icon fa-twitter"
+              aria-label="Link to open Katie's twitter page."
             >
               <span class="label">Twitter</span>
             </a>
@@ -1590,7 +1607,9 @@
             <a
               href="https://www.linkedin.com/in/katieembreyfarquhar/"
               target="_blank"
+              rel="noopener"
               class="icon fa-linkedin"
+              aria-label="Link to open Katie's Linked In page."
             >
               <span class="label">LinkedIn</span>
             </a>
@@ -1600,13 +1619,15 @@
             <a
               href="https://github.com/kembreyfarquhar"
               target="_blank"
+              rel="noopener"
               class="icon fa-github"
+              aria-label="Link to open Katie's Github page."
             >
               <span class="label">Github</span>
             </a>
           </li>
           <li>
-            <a href="mailto:kembreyfarquhar@gmail.com"
+            <a href="mailto:kembreyfarquhar@gmail.com" aria-label="Link to send Katie an email."
               ><i class="far fa-envelope" style="font-size: 28px"></i
             ></a>
           </li>
