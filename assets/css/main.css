@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
 
 /* Containers */
 
@@ -1541,38 +1540,6 @@ textarea:invalid {
   box-shadow: none;
 }
 
-.select-wrapper {
-  text-decoration: none;
-  display: block;
-  position: relative;
-}
-
-.select-wrapper:before {
-  content: "";
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
-}
-
-.select-wrapper:before {
-  display: block;
-  height: 3.5em;
-  line-height: 3.5em;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 3.5em;
-}
-
-.select-wrapper select::-ms-expand {
-  display: none;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   -moz-appearance: none;
@@ -1597,16 +1564,6 @@ input[type="radio"] + label {
   padding-left: 2.85em;
   padding-right: 0.75em;
   position: relative;
-}
-
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
 }
 
 input[type="checkbox"] + label:before,

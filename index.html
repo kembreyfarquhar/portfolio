@@ -30,7 +30,7 @@
       :root {
         --pink: #fe7c9b;
         --mint: #25ccb6;
-        --dark-mint: #00917e;
+        --dark-mint: #007969;
         --yellow: #ffca26;
         --black: #000000;
         --white: #ffffff;
@@ -383,22 +383,6 @@
       ::-webkit-input-placeholder {
         color: #999 !important;
       }
-      .icon {
-        text-decoration: none;
-        border-bottom: none;
-        position: relative;
-      }
-      .icon:before {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important;
-      }
-      .icon > .label {
-        display: none;
-      }
       .image {
         border-radius: 0;
         border: 0;
@@ -428,9 +412,6 @@
       }
       ul.icons > li:last-child {
         padding-right: 0;
-      }
-      ul.icons > li .icon:before {
-        font-size: 2em;
       }
       ul.actions {
         cursor: default;
@@ -703,112 +684,6 @@
         text-decoration: none;
         margin-left: 0.2em;
       }
-      #header a[href="#nav"] {
-        text-decoration: none;
-        -webkit-tap-highlight-color: transparent;
-        color: var(--black);
-        margin-right: 0;
-      }
-      #header a + a[href="#nav"]:last-child {
-        border-left: solid 1px transparent;
-        padding-left: 1.25em;
-        margin-left: 0.5em;
-        background-color: transparent;
-        font-size: 1.25em;
-        padding: 1em 2em;
-        position: absolute;
-      }
-      #header a[href="#nav"]:before {
-        content: "";
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important;
-        margin: 0 0.5em 0 0;
-      }
-      #nav {
-        -moz-transform: translateX(20em);
-        -webkit-transform: translateX(20em);
-        -ms-transform: translateX(20em);
-        transform: translateX(20em);
-        -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease,
-          visibility 0.5s;
-        -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease,
-          visibility 0.5s;
-        -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease,
-          visibility 0.5s;
-        transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-        -webkit-overflow-scrolling: touch;
-        background: var(--pink);
-        box-shadow: none;
-        color: var(--black);
-        height: 100%;
-        max-width: 80%;
-        overflow-y: auto;
-        padding: 3em 2em;
-        position: fixed;
-        right: 0;
-        text-transform: uppercase;
-        top: 0;
-        visibility: hidden;
-        width: 20em;
-        z-index: 10002;
-      }
-      #nav > ul {
-        margin: 1em 0;
-      }
-      #nav > ul.links {
-        list-style: none;
-        padding: 0;
-      }
-      #nav > ul.links > li {
-        padding: 0;
-      }
-      #nav > ul.links > li > a:not(.button) {
-        margin: 3em 0;
-        color: var(--black);
-        display: block;
-        line-height: 3.5em;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        border-bottom: 1px solid var(--black);
-      }
-      #nav > ul.links > li:first-child > a:not(.button) {
-        border-top: 0 !important;
-      }
-      #nav .close {
-        text-decoration: none;
-        -moz-transition: color 0.2s ease-in-out;
-        -webkit-transition: color 0.2s ease-in-out;
-        -ms-transition: color 0.2s ease-in-out;
-        transition: color 0.2s ease-in-out;
-        -webkit-tap-highlight-color: transparent;
-        border: 0;
-        color: var(--black);
-        cursor: pointer;
-        display: block;
-        height: 3.25em;
-        line-height: 3.25em;
-        padding-right: 1.25em;
-        position: absolute;
-        right: 0;
-        text-align: right;
-        top: 0;
-        width: 7em;
-      }
-      #nav .close:before {
-        content: "";
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important;
-        font-size: 1.25em;
-      }
       #banner {
         padding: 8em 0 6em 0;
         background-color: var(--white);
@@ -1024,46 +899,11 @@
       <div id="header-github-link-container">
         <img src="./images/github.png" alt="Github Icon" id="github" /><a
           href="https://github.com/kembreyfarquhar"
+          aria-label="Link to open Katie's Github page."
           >Katie Embrey-Farquhar</a
         >
       </div>
-      <!-- hamburger menu icon -->
-      <a href="#nav" aria-label="Open the navigation menu."></a>
     </header>
-
-    <!-- menu options -->
-    <nav id="nav">
-      <ul class="links">
-        <li>
-          <a
-            href="#about"
-            aria-label="Scroll to the 'About Me' section of the page."
-            >About Me</a
-          >
-        </li>
-        <li>
-          <a
-            href="#skills-header-background"
-            aria-label="Scroll to the 'My Skills' section of the page."
-            >Skills</a
-          >
-        </li>
-        <li>
-          <a
-            href="#projects"
-            aria-label="Scroll to the 'My Projects' section of the page."
-            >Projects</a
-          >
-        </li>
-        <li>
-          <a
-            href="#contact"
-            aria-label="Scroll to the 'Contact Me' section of the page."
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
 
     <!-- ============================================== Banner ============================================== -->
     <div>
@@ -1626,10 +1466,8 @@
               href="https://twitter.com/kembreyfarquhar"
               target="_blank"
               rel="noopener"
-              class="icon fa-twitter"
               aria-label="Link to open Katie's twitter page."
-            >
-              <span class="label">Twitter</span>
+              ><i class="fab fa-twitter" style="font-size: 28px"></i>
             </a>
           </li>
 
@@ -1638,10 +1476,8 @@
               href="https://www.linkedin.com/in/katieembreyfarquhar/"
               target="_blank"
               rel="noopener"
-              class="icon fa-linkedin"
               aria-label="Link to open Katie's Linked In page."
-            >
-              <span class="label">LinkedIn</span>
+              ><i class="fab fa-linkedin" style="font-size: 28px"></i>
             </a>
           </li>
 
@@ -1650,10 +1486,9 @@
               href="https://github.com/kembreyfarquhar"
               target="_blank"
               rel="noopener"
-              class="icon fa-github"
               aria-label="Link to open Katie's Github page."
             >
-              <span class="label">Github</span>
+              <i class="fab fa-github" style="font-size: 28px"></i>
             </a>
           </li>
           <li>
@@ -1693,9 +1528,5 @@
         offset: 0,
       });
     </script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
